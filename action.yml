@@ -27,7 +27,7 @@ inputs:
   checkstyle_config:
     description: 'Checkstyle config file'
     required: true
-    default: 'checkstyle.xml'
+    default: '/checkstyle.xml'
   checkstyle_version:
     description: 'Checkstyle version'
     default: '8.40'
