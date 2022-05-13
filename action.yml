@@ -2,7 +2,7 @@
 name: 'Run java checkstyle'
 description: 'Run java checkstyle with reviewdog'
 branding:
-  icon: 'code'  
+  icon: 'code'
   color: 'red'
 inputs:
   github_token:
@@ -39,7 +39,7 @@ inputs:
     default: 'reviewdog'
   properties_file:
     description: 'Properties file relative to the root directory.'
-    default: ''
+    default: '/checkstyle.properties'
 runs:
   using: 'docker'
   image: 'Dockerfile'

@@ -8,5 +8,6 @@ COPY entrypoint.sh /entrypoint.sh
 COPY checkstyle/checkstyle.xml /checkstyle.xml
 COPY checkstyle/checkstyle-suppressions.xml /checkstyle-suppressions.xml
 COPY checkstyle/import-control.xml /import-control.xml
+COPY checkstyle/checkstyle.properties /checkstyle.properties
 
 ENTRYPOINT ["/entrypoint.sh"]
