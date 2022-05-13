@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -x
+
 echo "Running check"
 
 cd "${GITHUB_WORKSPACE}" || exit 1
