@@ -2,7 +2,7 @@
 
 set -x
 
-echo "Running check"
+echo "Running check, new version"
 
 cd "${GITHUB_WORKSPACE}" || exit 1
 
