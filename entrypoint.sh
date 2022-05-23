@@ -18,6 +18,12 @@ wget -O - -q https://github.com/checkstyle/checkstyle/releases/download/checksty
 
 exec java -jar /checkstyle.jar "${INPUT_WORKDIR}" -c "${INPUT_CHECKSTYLE_CONFIG}" ${OPT_PROPERTIES_FILE} -f xml > checkstyle_output.xml || true
 
+echo "file generated !"
+
+if [ -f checkstyle_output.xml ]; then
+    echo "checkstyle_output.xml exists."
+fi
+
 cat checkstyle_output.xml || true
 
 cat checkstyle_output.xml | reviewdog -f=checkstyle \
