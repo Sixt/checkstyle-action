@@ -18,7 +18,7 @@ wget -O - -q https://github.com/checkstyle/checkstyle/releases/download/checksty
 
 exec java -jar /checkstyle.jar "${INPUT_WORKDIR}" -c "${INPUT_CHECKSTYLE_CONFIG}" ${OPT_PROPERTIES_FILE} -f xml > checkstyle_output.xml || true
 
-cat checkstyle_output.xml
+cat checkstyle_output.xml || true
 
 cat checkstyle_output.xml | reviewdog -f=checkstyle \
       -name="${INPUT_TOOL_NAME}" \
