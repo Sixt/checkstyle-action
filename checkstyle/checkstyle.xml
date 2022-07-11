@@ -45,6 +45,25 @@
      value="Please use specialized AssertJ assertThat*Exception method." />
    <property name="ignoreComments" value="true" />
  </module>
+ <module name="NPathComplexity">
+  <property name="max" value="200"/>
+</module>
+<module name="UnusedImports"/>
+<module name="UnusedLocalVariable"/>
+<module name="MethodLength">
+  <property name="tokens" value="METHOD_DEF"/>
+  <property name="max" value="100"/>
+  <property name="countEmpty" value="false"/>
+</module>
+<module name="ParameterNumber">
+  <property name="max" value="5"/>
+  <property name="tokens" value="CTOR_DEF,METHOD_DEF"/>
+</module>
+<module name="LocalVariableName">
+  <property name="format" value="^[a-z](_?[a-zA-Z0-9]+)*$"/>
+</module>
+<module name="InnerAssignment"/>
+<module name="ClassFanOutComplexity"/>
  <!--<module name="io.spring.javaformat.checkstyle.check.SpringJavadocCheck">
    <property name="publicOnlySinceTags" value="true" />
    <property name="requireSinceTag" value="true" />
