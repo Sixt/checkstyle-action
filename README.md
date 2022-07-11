@@ -37,7 +37,7 @@ Default is `false`.
 **Important**: this feature only works when `level` is set to `error`.
 
 ### `tool_name`
-    
+
 Optional. Tool name to use for reviewdog reporter.
 Default is 'reviewdog'.
 
@@ -64,7 +64,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Run check style
-      uses: nikitasavinov/checkstyle-action@master
+      uses: Sixt/checkstyle-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         reporter: 'github-pr-check'
